@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+/* reset css*/
+*{
+    margin: 0px;
+    padding:0px;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top:0px;
+    cursor: pointer;
+    
+}
+/* logo */
+.logo{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.logo img{
+    width: 30%;
+    border:white;
+    border-radius: 50%;
+}
+
+/* Nav-list */
+.nav-list{
+    width: 70%;
+    /* background-color: rgb(83, 78, 78); */
+    display: flex;
+    align-items: center;
+    
+    
+}
+   
+.nav-list li{
+    list-style: none;
+    padding: 6px 25px
+
+}
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+    border: 2px solid gray;
+    padding: 5px;
+    border-radius: 12px;
+    font-size: 20px;
+  font-family: 'Ubuntu', sans-serif;
+}
+    
+
+.nav-list li a:hover{
+    text-decoration: none;
+    color:lightskyblue;
+    cursor: pointer;
+    
+}
+/* RightNav */
+.rightNav{
+    /* border: 2px solid green;    */
+    /* background-color: yellow; */
+    width: 30%;
+    text-align: right;
+    padding: 0px 23px;
+ }
+
+ /* search */
+ #search{
+    padding: 5px;
+    font-size: 17px;
+    border: gray;
+    border-radius: 20px;
+ }
+
+ /* background */
+ .background{
+     background:rgba(0, 0, 0, 0.7) url('../writing.jpg');
+     background-size: cover;
+     background-blend-mode:color-dodge ;
+ }
+
+ .firstSection{
+     height: 80vh;
+ }
+ .box-main{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: white;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     max-width: 50%;
+     margin: auto;
+     height: 90%;
+ }
+
+    .firstHalf{
+    width: 80%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+
+
+.secondHalf{
+    width: 30%;
+    }
+.secondHalf img{
+    width: 100%;
+    height: 157px;
+    border: 4px solid beige;
+    border-radius: 40px;
+    display: block;
+    margin: auto;
+}
+.text-big{
+    font-size: 35px;
+    
+}
+.text-small{
+    font-size: 20px;
+}
+
+.btn{
+    margin: 8px 4px;
+    padding: 7px 12px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    font-size: 17px;
+    background: none;
+    color:white;
+    cursor: pointer ;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+}
+
+.btn-sm{
+    padding: 2px 6px;
+    vertical-align: middle;
+    font-size: 16px;
+}
+.btn-dark{
+    color:black;
+    border:2px solid gray;
+    
+}
+/* section secRight */
+.section{
+    /* height: 400px;       resp overlapping  */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 10px;
+}
+
+.sectionTag{
+    padding:16px 0px;
+}
+.paras{
+        padding: 0px 60px;
+} 
+
+/* secLeft */
+
+.section-left{
+    flex-direction: row-reverse;
+
+}
+.sectionSubtag  {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.thumbnail{
+    transition: transform .2s;
+}
+.thumbnail:hover{
+    -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5);
+    cursor: pointer ;
+
+}
+.thumbnail img{
+    border: 2px solid;
+    border-radius: 30px;
+    width: 280px;
+    height: 240px;
+    margin-bottom: 2px;
+    margin-top: 20px;
+}
+
+/* qualification */
+#services{
+    margin:34px;
+    display: flex;
+    
+}
+
+/* #services-container::before{
+    content: "";
+    position: absolute;
+    background:url('../HSC.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+
+} */
+
+#services .box{
+    border : 2px solid brown;
+    padding: 24px;
+    margin: 4px;
+    border-radius: 23px;
+    background-color: gainsboro;
+    
+}
+
+#services .box img{
+    height: 152px;
+    margin: auto;
+    display: block;
+    
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+}
+
+
+
+/* skills */
+/* Client Section */
+#client-section{
+    height: 365px;
+    position: relative;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../code.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 34px;
+}
+
+#clients img{
+    height: 95px;
+}
+/* skills edit */
+#clients ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+#clients  ul li {
+    border: 1px solid #ddd;
+    margin-top: 2px; /* Prevent double borders */
+    background-color: #f6f6f6;
+    padding: 12px;
+  }
+
+/* card profile */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+  
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+  
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+  }
+  
+  button:hover, a:hover {
+    opacity: 0.7;
+  }
+
+
+/* contact */
+.contact{
+    /* border:2px solid blue; */
+    background-color:lightgray;
+    height: 660px;
+}
+
+.text-align{
+text-align: center;
+padding:30px; 
+font-size: 34px;
+font-family: 'Ubuntu', sans-serif;
+
+}
+
+.form{
+    max-width: 62%;
+    margin:10px auto;
+}
+.form-input{
+    margin:12px 0px;
+    padding: 5px 3px;
+ width: 100%;
+ font-size: 18px;
+ border: 2px solid gray;
+ border-radius: 8px;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.text-footer{
+    text-align: center;
+    padding:18px 0px; 
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: blanchedalmond;
+    
+}
+/* burger */
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right:5px ;
+    top: 15px;
+
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+    
+}
+

@@ -1,0 +1,24 @@
+/*Services Sectio  */
+#services{
+    flex-direction: column;
+
+}
+
+
+
+    #services .box img {
+        height: 105px;
+        margin: auto;
+        display: block;
+    
+
+}
+
+/* Client-section */
+#clients{
+    flex-wrap: wrap;
+}
+#clients img{
+    width: 70px;
+      
+}
