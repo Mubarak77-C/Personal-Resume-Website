@@ -243,8 +243,8 @@ html{
 /* skills */
 /* Client Section */
 #client-section{
-    height: 365px;
-    position: relative;
+    height: 360px;
+    /* position: relative; */
 }
 #client-section::before{
     content: "";
@@ -278,7 +278,7 @@ html{
     border: 1px solid #ddd;
     margin-top: 2px; /* Prevent double borders */
     background-color: #f6f6f6;
-    padding: 12px;
+    padding: 9px;
   }
 
 /* card profile */
